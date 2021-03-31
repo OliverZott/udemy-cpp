@@ -1,16 +1,20 @@
 #include <iostream>
 
+#include "Exercise_1_square.h"
+
+
 int main()
 {
 
+    double a;
+    double b;
 
-    char variable1;         // decalration
-    int variable2 = 3.4;    // decalration and initialization
+    std::cout << "Enter first numbers" << std::endl;
+    std::cin >> a;
+    std::cout << "Enter second numbers" << std::endl;
+    std::cin >> b;
 
-    variable1 = 7;          // initialization
-    int result = variable1 + variable2;
+    std::cout << "Result: " << calculateSquare(a, b) << std::endl;
 
-    std::cout << result << std::endl;
-    
     return 0;
 }
